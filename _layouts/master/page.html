@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{% if site.language %}{{ site.language }}{% else %}en{% endif %}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SMAERT | Design</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}"> 
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//code.jquery.com">
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="icon" href="{{ 'assets/images/smaertfav.png' | relative_url }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/{{ site.data.cdn.fontawesome }}/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ 'assets/css/app.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/ihover.css' | relative_url }}" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<header>
+    {% include components/navbar.html %}
+</header>
+<div class="wrapper">
+        {{ content }}
+<button id="scroll-to-top" class="btn btn-outline-secondary btn-sm py-2" title="Scroll to top"><i class="fa fa-chevron-up fa-fw"></i></button>
+    </div>
+
+{% include scripts-bottom.html %}
+</body>
+</html>

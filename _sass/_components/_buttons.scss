@@ -1,0 +1,32 @@
+#scroll-to-top {
+  $offset: 1.5em;
+  bottom: $offset;
+  display: none;
+  position: fixed;
+  right: $offset;
+    color: #50B3D8;
+}
+.slides-button {
+    box-shadow: none;
+    background-color: #333334;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+}
+.slides-button:hover {
+        background-color: #49B170;
+    }
+.slides-button.active {
+        background-color: #49B170;
+    }
+.btn {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1em;
+}
+.btn-primary {
+    background-color: #49B170;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: #49B170;
+}

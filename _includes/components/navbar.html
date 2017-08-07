@@ -1,0 +1,115 @@
+<div id="wrapper" data-spy="scroll" data-target="#spy" class="">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" class="">
+        <nav id="spy">
+            <img src="{{ 'assets/images/smaert.png' | relative_url }}" class="logo-sidebar">
+            <ul class="sidebar-nav">
+            {% assign navigation_pages = site.pages %}
+            {% for p in navigation_pages %}
+                {% if p.title and p.visibility != 'hidden' %}
+                <li class="nav-item">
+                <a href="{{ p.url | relative_url }}" class="nav-item nav-link {% if p.url == page.url %} active{% endif %} m-l-1">
+                    {{ p.title }}
+                </a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul> 
+            
+            
+        <div class="nav-bottom"> 
+        <div id="icon">
+           <ul class="list-inline text-center">
+                        <li >
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/stijn.maes.180">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                 <p class="copyright"> <br>© SMAERT / Stijn Maes  <br> 0499 33 69 22 / smaertdesign@gmail.com </p>
+              </div>
+
+        </nav>
+    </div>
+    <div class="dropdown">
+        <div id="topNav" class="navigation">
+  <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+  </span> 
+                        
+<ul class="menulist">
+            {% assign navigation_pages = site.pages %}
+            {% for p in navigation_pages %}
+                {% if p.title and p.visibility != 'hidden' %}
+                <li class="bold">
+                <a href="{{ p.url | relative_url }}" class="menuitems nav-link {% if p.url == page.url %} active{% endif %} m-l-1">
+                    {{ p.title }}
+                </a>
+                </li>
+                
+                {% endif %}
+            {% endfor %}
+
+            </ul> 	
+            
+        <div class="nav-mobile-bottom"> 
+            
+        <div id="icon">
+           <ul class="list-inline text-center">
+                        <li >
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ 'https://www.facebook.com/stijn.maes.180?ref=bookmarks' | relative_url }}">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright"> <br>© SMAERT / Stijn Maes  <br> 0499 33 69 22 / smaertdesign@gmail.com </p>
+              </div>
+</div>
+<div id="main">
+</div>
+    </div>
+    
+    
+</div>

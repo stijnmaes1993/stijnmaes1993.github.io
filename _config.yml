@@ -1,0 +1,28 @@
+# Site settings
+title: smaert
+description: "Jekyll Startproject Artevelde University College Ghent"
+authors:
+  - stijnmaes1993
+language: nl
+
+# Handling Reading
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
+gems:
+  - bootstrap
+
+bootstrap:
+  assets: true
+
+# Collections
+collections:
+  _keynotes:
+    output: false
+    permalink: /:collection/:path/:name/
+
+sass:
+  style: compressed
